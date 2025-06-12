@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Love Day | For Melly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #fff0f5;
+      color: #444;
+    }
+    .envelope-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 1000;
+      transition: opacity 1s ease;
+    }
+    .fade-out {
+      opacity: 0;
+    }
+    .envelope-screen img {
+      width: 150px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .envelope-screen img:hover {
+      transform: scale(1.1);
+    }
+    header, nav, .content, .footer {
+      display: none;
+    }
+    .show-page header,
+    .show-page nav,
+    .show-page .content,
+    .show-page .footer {
+      display: block;
+    }
+    header {
+      background: #ff69b4;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #ffe4e1;
+      padding: 10px;
+    }
+    nav a {
+      color: #d63384;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .love-letter {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .love-letter h2,
+    .love-letter h3 {
+      text-align: center;
+    }
+    .love-letter p {
+      text-align: center;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffe4e1;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope-screen" id="envelopeScreen">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-mail.svg/1024px-Circle-icons-mail.svg.png" alt="Open Love Letter" onclick="showLoveLetter()">
+    <p>Click the envelope to open your love letter 💌</p>
+  </div>
+
+  <header>
+    National Love Day 💖
+  </header>
+
+  <nav>
+    <a href="love-letter.html">Love Letter</a>
+  </nav>
+
+  <div class="content love-letter">
+    <h2>Hi Melly, This is for u darling 💗💖💗💖💞💓👄</h2>
+    <h3>Happy National Love Day, My Sweetheart Melly ❤️</h3>
+    <p>
+      Today is a day to celebrate love, but honestly every day feels like I become more in love with u 💞💞.<br>
+      I want to take this day as a remind to you how kind and sweet and loving and caring and special and perfect in every way for me 💗💗💖💖.<br><br>
+
+      Melly, you are the most kind and sweet woman I ever meet in my hole life 💗💖.<br>
+      Your talking with me can turn my bad day into the best day ever baby 💓💓.<br>
+      You have a heart that’s sooo kind and sweet and funny and warm and perfect in every way,
+      and I feel very lucky to be the one you share it with.<br><br>
+
+      You’re smart and strong, and funny and kind and sweet and genuine soul 💗💗.<br>
+      I admire your confidence, your passion 💖,
+      and even when I said smth freaky or weird u get weird with me — that makes you unique 💞💓.<br><br>
+
+      I fall in love with you more and more with every whenever we talk 💖💗.<br>
+      You’re not just my girlfriend — you’re my best friend, my peace, my life, my everything,
+      and I truly love u from the heart 💗💖💞.<br>
+      (sorry if my English bad 😅)<br><br>
+
+      Thank you, Melly ✨, for being the best thing in my world 💖.<br>
+      Your support, your love —
+      you make life feel so much more sweet because of u my love 💖✨.<br>
+      And I’ll never stop being grateful for you 🤓🤓.<br><br>
+
+      I promise to always love you 💕💕,
+      and I'm so sorry if I hurt u before 😞.<br>
+      I tell myself every chance I get just how lucky I am to call you mine
+      and you call me yours 💕💕💗💗💖💖✨✨.
+    </p>
+    <p><strong>With all my love,</strong><br>– Mazen</p>
+  </div>
+
+  <div class="footer">
+    Made with love in Cairo, Egypt 💘
+  </div>
+
+  <script>
+    function showLoveLetter() {
+      const screen = document.getElementById('envelopeScreen');
+      screen.classList.add('fade-out');
+      setTimeout(() => {
+        screen.style.display = 'none';
+        document.body.classList.add('show-page');
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
